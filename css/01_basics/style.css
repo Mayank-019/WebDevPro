@@ -1,0 +1,5 @@
+p {
+    color: cornflowerblue;  /* this will not change why? coz of high power or lower power */
+    font-size: 25px;
+    padding: 200px;
+}
