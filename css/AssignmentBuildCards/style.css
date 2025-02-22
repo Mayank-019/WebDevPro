@@ -1,0 +1,61 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow: hidden;
+    background: url(../images/luke-chesser-pJadQetzTkI-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    background: linear-gradient(135deg, #A1E3F9, #B9E5E8);
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: #6EACDA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+}
