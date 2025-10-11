@@ -1,4 +1,4 @@
-const names = ["Mayank", "John", "Doe"];
+// const names = ["Mayank", "John", "Doe"];
 
 // names.push("Jane"); // append to the end
 
@@ -44,63 +44,63 @@ const names = ["Mayank", "John", "Doe"];
 
 // ============== Destructuring ===============
 
-const userName = ["Mayank", "Emily"];
-const firstName = userName[0];
-const lastName = userName[1];
+// const userName = ["Mayank", "Emily"];
+// const firstName = userName[0];
+// const lastName = userName[1];
 
-console.log(firstName);
-console.log(lastName);
+// console.log(firstName);
+// console.log(lastName);
 
 // array destructuring
-const [fName, lName] = ["Mayank", "Emily"];
+// const [fName, lName] = ["Mayank", "Emily"];
 
-console.log(fName);
-console.log(lName);
+// console.log(fName);
+// console.log(lName);
 
 // object destructuring
-const userData =  {
-  name: "Mayank",
-  age: 21,
-};
+// const userData =  {
+//   name: "Mayank",
+//   age: 21,
+// };
 
-const userName1 = userData.name, userAge = userData.age;
+// const userName1 = userData.name, userAge = userData.age;
 
-console.log(userName1);
-console.log(userAge);
+// console.log(userName1);
+// console.log(userAge);
 
 // can use this 
-const {name, age} = userData;
+// const {name, age} = userData;
 
-console.log(name);
-console.log(age);
+// console.log(name);
+// console.log(age);
 
 // ============== Spread Operator ==================
 
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
 
-const merged = [arr1, arr2]; // [[1,2,3], [4,5,6]]
-console.log(merged);
+// const merged = [arr1, arr2]; // [[1,2,3], [4,5,6]]
+// console.log(merged);
 
 // to solve above issue we can use spread operator
 // const arr3 = arr1.concat(arr2);
-const arr3 = [...arr1, ...arr2];
+// const arr3 = [...arr1, ...arr2];
 
-console.log(arr3);
+// console.log(arr3);
 
 // ========= Set Interval and Timeout ==========
 
-const intervalId = setInterval(() => {
-  console.log("Hello from interval");
-}, 2000);
+// const intervalId = setInterval(() => {
+//   console.log("Hello from interval");
+// }, 2000);
 
-clearInterval(intervalId);
+// clearInterval(intervalId);
 
-const timeoutId = setTimeout(() => {
-  console.log("Hello from timeout");
-}, 3000);
+// const timeoutId = setTimeout(() => {
+//   console.log("Hello from timeout");
+// }, 3000);
 
-clearTimeout(timeoutId);
+// clearTimeout(timeoutId);
 
 // ============ Asynchronous Programming =============
 
@@ -139,3 +139,21 @@ clearTimeout(timeoutId);
 // }
 
 // processUserInput(greeting);
+
+
+// ===================== Promises ===================
+
+// promise banana 
+const promise = new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    console.log("Async operation complete");
+    resolve({messgae: "Success", data:[]});
+  }, 1000);  
+});
+
+// promise use karna
+promise.then(function() {
+  console.log("Promise resolved");
+}).catch(function() {
+  console.log("Promise rejected");
+});
